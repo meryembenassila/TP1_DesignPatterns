@@ -36,3 +36,21 @@ test
 ![img_5.png](img_5.png)
 
 ![img_6.png](img_6.png)
+
+Exercice 2 :
+On souhaite concevoir et développer un Framework qui permet d’effectuer des traitements sur une  image. L’image étant représentée par un tableau d’entiers. Le Framework définit deux opérations
+principales :
+ Une opération qui permet de filtrer l’image dont la signature est :
+o public int[] filter (int [] data)
+ Une opération qui permet de compresser l’image dont la signature est :
+o public int[] compresser (int [] data)
+Le Framework doit respecter les critères suivants :
+ Il doit être fermé à la modification et ouvert à l’extension.
+
+![img_6.png](EX2.png)
+
+test 
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
