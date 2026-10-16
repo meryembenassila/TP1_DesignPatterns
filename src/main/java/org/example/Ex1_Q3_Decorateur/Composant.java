@@ -1,4 +1,4 @@
-package org.example.Q3_Decorateur;
+package org.example.Ex1_Q3_Decorateur;
 
 public interface Composant {
     void traitement();

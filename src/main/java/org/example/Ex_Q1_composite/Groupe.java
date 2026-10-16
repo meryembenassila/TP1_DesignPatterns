@@ -1,4 +1,4 @@
-package org.example.Q1_composite;
+package org.example.Ex_Q1_composite;
 
 import java.util.ArrayList;
 import java.util.List;
