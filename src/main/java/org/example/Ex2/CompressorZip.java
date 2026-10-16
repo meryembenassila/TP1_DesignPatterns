@@ -1,8 +1,10 @@
 package org.example.Ex2;
 
-public class CompressorZip implements  Compressor{
+public class CompressorZip extends   Compressor{
+
+
     @Override
-    public int[] compresser(int[] data) {
+    protected int[] compressionSpecifique(int[] data) {
         System.out.println("****************** CompressorZIP ***************************");
         int[] compress =new  int[data.length];
         for (int i = 0; i < data.length; i++) {

@@ -40,17 +40,36 @@ test
 Exercice 2 :
 On souhaite concevoir et développer un Framework qui permet d’effectuer des traitements sur une  image. L’image étant représentée par un tableau d’entiers. Le Framework définit deux opérations
 principales :
+
  Une opération qui permet de filtrer l’image dont la signature est :
+
 o public int[] filter (int [] data)
+
  Une opération qui permet de compresser l’image dont la signature est :
+
 o public int[] compresser (int [] data)
+
 Le Framework doit respecter les critères suivants :
+
  Il doit être fermé à la modification et ouvert à l’extension.
 
-![img_6.png](EX2.png)
+ L’opération de filtrage à effectuer peut évoluer dans le temps. Cela signifie que l’utilisateur de l’application peut, lui-même, définir de nouvelles implémentations de l’opération de
+filtrage.
+
+ Au moment de l’exécution, on peut changer dynamiquement la version de l’implémentation de filtrage à appliquer à l’image.
+
+ Permettre au Framework d’utiliser une ancienne implémentation (ImplNonStandard)
+d’une opération de filtrage dont la signature est :
+
+o public int[] appliquerFiltre(String filterName, int[] data)
+
+ Pour l’opération de compression, on souhaite définir le squelette de l’algorithme de
+compression et déléguer les détails de cet algorithme aux sous classes.
+
+![img_6.png](EX22.png)
 
 test 
 
-![img_7.png](img_7.png)
+![img_10.png](img_10.png)
 
-![img_8.png](img_8.png)
+

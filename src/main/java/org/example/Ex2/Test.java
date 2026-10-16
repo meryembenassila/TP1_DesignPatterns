@@ -19,6 +19,9 @@ public class Test {
         System.out.println("*********************************************");
         image.setCompressor(new CompressorZip());
 
+        AdapterFilterNonStandard adapterFilter = new AdapterFilterNonStandard();
+        image.setFilter(adapterFilter);
+
 
         System.out.println(Arrays.toString(image.compress()));
         System.out.println(Arrays.toString(image.filter()));
